@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/shablonCheckBoxes"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/polutech_blue_color"
+    android:padding="2dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        android:gravity="center"
+        android:text="group - 40.04.01.ta"
+        android:textColor="@color/polutech_blue_color"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
+
+
+</RelativeLayout>

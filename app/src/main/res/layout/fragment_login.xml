@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Саҳифаи воридшавӣ"
+            android:textColor="@color/polutech_blue_color"
+            android:textSize="32sp" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/polutech_logo" />
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/polutech_blue_color"
+            android:ems="10"
+            android:hint="username"
+            android:inputType="textEmailAddress"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/polutech_blue_color"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:textSize="30dp" />
+
+
+        <Button
+            android:id="@+id/voridButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/polutech_blue_color"
+            android:padding="8dp"
+            android:text="ВОРИД"
+            android:textAllCaps="true"
+            android:textSize="25dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

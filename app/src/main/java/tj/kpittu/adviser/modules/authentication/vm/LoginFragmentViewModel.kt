@@ -14,7 +14,7 @@ class LoginFragmentViewModel(application: Application) : BaseViewModel(applicati
     private val message: MutableLiveData<String> = MutableLiveData()
 
     fun validate(login: String , password: String): LiveData<Boolean> {
-        val status:MutableLiveData<Boolean> = MutableLiveData()
+        val status: MutableLiveData<Boolean> = MutableLiveData()
 
         viewModelScope.launch(Dispatchers.Default) {
             if (login.isNotEmpty() && password.isNotEmpty()) {
@@ -32,31 +32,33 @@ class LoginFragmentViewModel(application: Application) : BaseViewModel(applicati
 
     }
 
-    fun getMessage():LiveData<String>{
+    fun getMessage(): LiveData<String> {
         return message
     }
 
-    fun setMessage(message:String){
-        this.message.value=message
+    fun setMessage(message: String) {
+        this.message.value = message
 
     }
-    fun getLogin():String?{
+
+    fun getLogin(): String? {
         return localStorageRepository.getString(LOGIN)
     }
-    fun putLogin(login:String){
-    localStorageRepository.putString(LOGIN,login)
+
+    fun putLogin(login: String) {
+        localStorageRepository.putString(LOGIN , login)
     }
 
-    fun getPassword():String?{
+    fun getPassword(): String? {
         return localStorageRepository.getString(PASSWORD)
     }
-    fun putPassword(password:String){
-        localStorageRepository.putString(PASSWORD,password)
+
+    fun putPassword(password: String) {
+        localStorageRepository.putString(PASSWORD , password)
     }
 
     companion object {
-        const val LOGIN:String = "login"
-        const val PASSWORD:String = "password"
+        const val LOGIN: String = "login"
+        const val PASSWORD: String = "password"
     }
-
 }
